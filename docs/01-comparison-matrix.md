@@ -27,3 +27,33 @@ Google Workspace: 100/150/500/1,000人・最大24時間、録画はStandard以�
 | その他 | ⚠️ 未確認（各ページ参照） |
 
 注: Linux 版 Teams は終了 ✅。Skype は終了との回答あり（公式未確認 ⚠️）。
+
+## ブラウザ参加・ゲスト参加
+| ツール | ブラウザ参加 | 備考 |
+|---|---|---|
+| Google Meet | ✅ | アプリ不要 |
+| Teams | ✅ デスクトップブラウザのみ（モバイル非対応）| 受信映像は1ストリーム、操作権限の付与不可 ✅ |
+| FaceTime | ✅ Chrome/Edge（Android/Windows） | ホストは Apple 端末、承認制、画面共有/SharePlay 不可 ✅ |
+| Slack | ✅ Chrome/Firefox | ワークスペース参加者向け ✅ |
+| Jitsi | 🔶 | Chrome系推奨 🔶 |
+| Zoom／Webex／LINE／Whereby／Discord | ⚠️ | 要確認 |
+
+## 録画・AI・字幕
+| ツール | 録画 | AI要約・メモ | 字幕 |
+|---|---|---|---|
+| Google Meet | Standard 以上（Drive）✅ | Gemini（対象エディション）✅🔶 | ⚠️ |
+| Teams | 1本最大4時間/1.5GB ✅ | Teams Premium または Copilot ＋文字起こし ✅ | ライブキャプション ✅ |
+| Webex | 無料はローカルのみ ✅ | AI Assistant（Enterprise含む、プラン別⚠️）✅ | 英・仏・独・西語 ✅ |
+| Slack | ⚠️ | 有料でハドル要約 ✅🔶 | 英語のみ・非保存 ✅ |
+| Jitsi | ローカル録画機能 ✅ | ⚠️ | ⚠️ |
+| Zoom | ⚠️ | AI Companion 🔶 | ⚠️ |
+
+## 要件（公式確認分）
+| ツール | Windows | macOS | モバイル |
+|---|---|---|---|
+| Teams | Windows 10 (10.0.19041)以上・2コア・RAM 4GB・空き3GB ✅ | 最新3世代・RAM 4GB ✅ | Android 直近4メジャー／iOS 直近2メジャー ✅ |
+| Webex | Windows 10/11、Intel 2.xx GHz デュアルコア ✅ | ⚠️ | ⚠️ |
+| Google Meet | ブラウザ | ブラウザ | Android 5.0+／iOS 17+ ✅ |
+
+## 提供終了
+Skype（2025年5月5日）✅ → [Skype](tools/skype.md)／Amazon Chime（2026年2月20日）✅ → [Amazon Chime](tools/amazon-chime.md)。

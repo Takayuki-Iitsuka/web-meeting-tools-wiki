@@ -31,7 +31,7 @@ Microsoft 365 に統合されたチャット・会議・共同作業基盤。⚪
 | 項目 | 内容 |
 |---|---|
 | macOS デスクトップ要件 | デュアルコア、RAM 4.0GB、空き 1.5GB、解像度 1200×800 以上、最新3世代の macOS、WebView2 を最新に ✅ |
-| Windows 要件 | ⚠️ 未確認（取得した結果に記載なし） |
+| Windows 要件 | ✅ 1.1GHz・2コア、RAM 4.0GB、空き3.0GB、Windows 10 (10.0.19041)以上（下記追補）|
 | Web 版 | モバイルブラウザは非対応、VDI では非推奨 ✅ |
 | 傾向 | 常駐アプリで Zoom/Meet より重いとされることが多い ⚪（定量値未確認） |
 | 軽減策 | 通知・アニメーションを抑える、カメラ解像度/背景効果を下げる、キャッシュ整理 ⚪ |
@@ -63,10 +63,48 @@ Windows / macOS アプリ ✅、Android / iOS・iPadOS アプリ ✅（最小OS�
 - コツ ⚪: 画面と映像を同時に出せる（Screen share and video together ✅ 対応と記載）ので、小窓の自分の映像を残して話すと伝わりやすい。
 - 共通のコツ ⚪: 画面全体より**ウィンドウ/アプリ単位**で共有する。共有前に通知をオフ（集中モード/おやすみモード）、機密タブ・メール・チャットを閉じる。資料は事前に開き、文字は拡大表示。動画や音を共有する場合は「コンピューター音声/デバイス音声を共有」のオプションを確認し、全員が聞こえるかを最初に確認する。2画面ならプレゼンター用と共有用を分ける。共有を止め忘れない。
 
+## 公式ページによる追補（Microsoft Learn・2026年11月3日取得）
+### 動作要件 ✅
+| 項目 | Windows デスクトップ | macOS デスクトップ |
+|---|---|---|
+| CPU | 1.1GHz 以上・2コア（Intel は Turbo Boost 最大周波数で判断）| デュアルコア |
+| RAM | 4.0GB | 4.0GB |
+| ディスク空き | 3.0GB | 1.5GB |
+| 画面 | 1024×768 以上 | 1200×800 以上 |
+| OS | Windows 10 バージョン 10.0.19041 以上（**LTSC は非対応**）| 最新3世代の macOS |
+| その他 | WebView2 を最新に。DirectX 9 以上＋WDDM 2.0 以上（ハードウェア アクセラレーション）。USB 2.0 カメラ | WebView2 を最新に |
+- **大規模会議（10人以上）・Teams Live Events の推奨: 2018年以降の4コア CPU** ✅。アバター／Mesh は RAM 8GB 以上＋4コア ✅。
+- Android: 直近4つのメジャーバージョンまで。iOS: 直近2つのメジャーバージョンまで（iPad を含む）✅。**固定の最低バージョン番号は公式に記載なし**（新OSリリースで対象が移動）。
+- Web 版: Edge/Chrome/Firefox は直近3版、Safari は直近2版。**モバイルブラウザ非対応**、VDI で非推奨 ✅。
+- ブラウザ制約 ✅: ブラウザでは「操作権限の付与/取得」不可（両者がデスクトップアプリである必要）。ブラウザ会議は **受信映像が1ストリーム**（現在の話者または画面共有のどちらか）。Safari は映像が受信のみとされる記述あり（版により異なる ⚠️）。Firefox は OpenH264 プラグインが必要。
+
+### AI（Intelligent recap／要約）✅
+- 条件: Microsoft 365 サブスクリプション（Teams 付き）＋ **Teams Premium または Microsoft Copilot ライセンス**。音声の要約（audio recap）は Copilot ライセンスが必要。
+- 前提: **文字起こしを有効化**（管理者ポリシー）。録画が許可されていない場合は録画・話者・トピック・チャプターなしの要約になる。
+- 「文字起こしを保存しない要約」: Copilot ライセンスが必要。**予定された会議のみ**対象。要約は主催者の OneDrive に読み取り専用の Word 文書として保存。同一組織の Copilot ライセンス保持者のみ閲覧可、**ゲスト・外部参加者は閲覧不可**。主催者が削除可能。
+- 録画の保存期間: 録画は最大4時間または1.5GBで自動再開 ✅。
+- 日本語対応の可否はこの資料から判別不可 ⚠️。
+
+## 運用ガイド（ホスト／参加者／使い分け）
+- **ホスト**: 会議オプションでロビー、発表者、録画・文字起こしの権限を設定 ⚪。AI要約は文字起こしの有効化が前提 ✅。
+- **参加者**: 組織外はゲストまたは匿名で参加可 🔶。ブラウザ参加はデスクトップのみ ✅。
+- **使い分け**: Microsoft 365 利用組織の定例・大規模会議（最大1,000人、閲覧専用 +10,000）向け ✅。
+- **相互運用**: ゲスト参加はライセンス不要 🔶。
+
+### トラブルシュート表
+| 症状 | 原因 | 対処 |
+|---|---|---|
+| ブラウザで映像が1つしか見えない | ブラウザ会議は受信1ストリーム ✅ | デスクトップアプリを使う |
+| 画面操作の権限を渡せない | ブラウザは非対応 ✅ | 両者ともデスクトップアプリ |
+| 音声・映像の一般的不調 | 権限・デバイス選択 | [音声・映像トラブル](../howto/audio-video-troubleshooting.md) ⚪ |
+
 ## 出典
 - https://learn.microsoft.com/microsoftteams/teams-client-system-requirements ✅
 - https://learn.microsoft.com/microsoftteams/teams-client-desktop-admin ✅
 - https://learn.microsoft.com/microsoftteams/limits-specifications-teams ✅
 - https://learn.microsoft.com/microsoftteams/meetings-events-feature-comparison ✅
+- https://learn.microsoft.com/microsoftteams/intelligent-recap-calls-meetings ✅
+- https://learn.microsoft.com/microsoftteams/intelligent-recap-without-saving-transcripts ✅
+- https://learn.microsoft.com/microsoftteams/limits-specifications-teams#browsers ✅
 - https://learn.microsoft.com/azure/virtual-desktop/teams-supported-features ✅
 - 価格: 比較サイト（eesel.ai, meetgeek.ai, costbench.com）🔶 ／ 無料枠: Microsoft Q&A 🔶

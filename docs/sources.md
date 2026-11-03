@@ -16,6 +16,13 @@
 - Jitsi FAQ: https://jitsi.github.io/handbook/docs/faq
 - Discord Nitro: https://discord.com/nitro
 
+- Teams 要件: https://learn.microsoft.com/microsoftteams/teams-client-system-requirements ／ Intelligent recap: https://learn.microsoft.com/microsoftteams/intelligent-recap-calls-meetings ／ https://learn.microsoft.com/microsoftteams/intelligent-recap-without-saving-transcripts
+- Skype 終了: https://support.microsoft.com/en-us/skype
+- Amazon Chime 終了: https://aws.amazon.com/chime/
+
+## 取得方針
+ボット対策の回避は行わない。通常アクセスで本文が返らないページは取得せず ⚠️ とする（GoTo Meeting 公式は 403）。
+
 ## 取得不可・本文未抽出（JavaScript描画／ボット対策）
 Zoom（zoom.us/pricing, support.zoom.com）、Whereby 料金、LINE ヘルプ、Discord ヘルプ、Microsoft Teams 無料ページ（ブロック）。
 

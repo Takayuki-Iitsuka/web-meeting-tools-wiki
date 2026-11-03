@@ -9,7 +9,7 @@
 | Google Meet | Gemini でメモ作成 | 対象 Workspace エディションが条件。無料・Starter では不可とする資料あり | ✅🔶 |
 | Webex | AI Assistant の会議要約 | 参加者がホストに依頼、ホスト／共同ホストが開始・停止。Enterprise に含まれる。プラン別は ⚠️ | ✅ |
 | Zoom | AI Companion | 要約はホスト開始。無料での提供は資料不一致 | 🔶 |
-| Teams | 文字起こし、ライブキャプション（CART）| Copilot 等の条件は ⚠️ 未確認 | ✅ / ⚠️ |
+| Teams | Intelligent recap（要約）、文字起こし、ライブキャプション | **Teams Premium または Copilot ライセンス＋文字起こし有効化**。保存しない要約は Copilot 必須・予定会議のみ・ゲストは閲覧不可 | ✅ |
 | LINE・FaceTime・Whereby・Discord・Jitsi | 標準の議事録AI | ⚠️ 未確認 | ⚠️ |
 
 ## 2. 運用の流れ ⚪

@@ -10,6 +10,7 @@ Windows / macOS / Android / iPadOS で使えるビデオ会議ツール・サー
 - [横断比較表](docs/01-comparison-matrix.md)
 - [用途別選定ガイド](docs/02-selection-guide.md)
 - ツール別: [Zoom](docs/tools/zoom.md) / [Microsoft Teams](docs/tools/microsoft-teams.md) / [Google Meet](docs/tools/google-meet.md) / [Webex](docs/tools/webex.md) / [Slack ハドル](docs/tools/slack-huddles.md) / [LINE](docs/tools/line.md) / [FaceTime](docs/tools/facetime.md) / [Whereby](docs/tools/whereby.md) / [Jitsi Meet](docs/tools/jitsi-meet.md) / [Discord](docs/tools/discord.md)
+- 提供終了・未調査: [Skype](docs/tools/skype.md) / [Amazon Chime](docs/tools/amazon-chime.md) / [調査できなかった候補](docs/tools/_unverified.md)
 - OS別: [Windows](docs/platforms/windows.md) / [macOS](docs/platforms/macos.md) / [Android](docs/platforms/android.md) / [iPadOS](docs/platforms/ipados.md)
 - ハウツー: [音声・映像トラブル](docs/howto/audio-video-troubleshooting.md) / [ネットワーク要件](docs/howto/network-requirements.md) / [画面共有のOS差](docs/howto/screen-sharing-per-os.md) / [セキュリティ](docs/howto/security-privacy-checklist.md) / [アクセシビリティ](docs/howto/accessibility.md) / [AI議事録](docs/howto/ai-minutes.md) / [スマホ⇄PC移動](docs/howto/switch-device.md) / [画面共有のコツ](docs/howto/screen-sharing-tips.md) / [機材・マナー](docs/howto/meeting-etiquette-and-setup.md)
 - [FAQ](docs/faq.md)

@@ -8,7 +8,7 @@
 ## 2. ツール別の対応（確認できた範囲）
 | ツール | 方式 | 根拠 |
 |---|---|---|
-| Microsoft Teams | デスクトップアプリ（64/32bit）、ブラウザ（Edge/Chrome/Firefox 直近3版） | ✅ |
+| Microsoft Teams | デスクトップアプリ（Windows 10 10.0.19041 以上、LTSC 非対応。2コア・RAM 4GB・空き3GB）、ブラウザ（Edge/Chrome/Firefox 直近3版） | ✅ |
 | Google Meet | ブラウザ（Chrome/Firefox/Edge/Safari 現行版） | ✅ |
 | Webex | Windows 10/11 対応、CPU は Intel デュアルコア 2.xx GHz または AMD（RAM 2GB 推奨） | ✅ |
 | Slack ハドル | デスクトップアプリ、Chrome、Firefox | ✅ |

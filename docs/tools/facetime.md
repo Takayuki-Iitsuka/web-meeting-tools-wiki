@@ -52,5 +52,18 @@ Apple 製デバイス標準のビデオ通話。iPadOS・macOS に標準搭載�
 - ✅ リンクは iOS 15 以降の iPhone/iPad/iPod touch、macOS Monterey 以降の Mac で作成可。**中国本土ではリンク非対応**。
 - 参加者上限32人は、この公式ページには記載なし 🔶 のまま。
 
+## 運用ガイド（ホスト／参加者／使い分け）
+- **ホスト**: Apple 端末でリンクを作成（iOS 15 / iPadOS 15 / macOS Monterey 以降）✅。
+- **参加者**: Android/Windows は Chrome/Edge で参加、ホストの承認が必要 ✅。
+- **使い分け**: Apple ユーザー中心の家族・友人。Web ゲストは SharePlay・画面共有不可 ✅。
+- **相互運用**: リンクなら非Apple端末も参加可 ✅。
+
+### トラブルシュート表
+| 症状 | 原因 | 対処 |
+|---|---|---|
+| 入室待ちのまま | ホスト未承認 ✅ | ホストが許可 |
+| 中国本土でリンクが使えない | 非対応 ✅ | 別ツール |
+| 音声・映像の一般的不調 | 権限・デバイス選択 | [音声・映像トラブル](../howto/audio-video-troubleshooting.md) ⚪ |
+
 ## 出典
 - https://support.apple.com/en-la/109364 （検索結果の要約。本文は接続不可）
